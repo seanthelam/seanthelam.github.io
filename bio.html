@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio · Sean D. Lam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">SDL</a>
+    <ul class="nav-links">
+      <li><a href="index.html"        class="nav-link">Home</a></li>
+      <li><a href="bio.html"          class="nav-link">Bio</a></li>
+      <li><a href="research.html"     class="nav-link">Research</a></li>
+      <li><a href="publications.html" class="nav-link">Publications</a></li>
+      <li><a href="cv.html"           class="nav-link">CV</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <ul>
+      <li><a href="index.html"        class="nav-link">Home</a></li>
+      <li><a href="bio.html"          class="nav-link">Bio</a></li>
+      <li><a href="research.html"     class="nav-link">Research</a></li>
+      <li><a href="publications.html" class="nav-link">Publications</a></li>
+      <li><a href="cv.html"           class="nav-link">CV</a></li>
+    </ul>
+  </div>
+
+  <div class="page-wrapper">
+    <header class="page-hero">
+      <p class="page-label">About Me</p>
+      <p class="page-subtitle">
+        I'm drawn to the places where quantum mechanics, computation, and materials science collide — and convinced the most interesting science lives at those intersections.
+      </p>
+    </header>
+
+    <main class="page-body">
+      <div class="bio-grid">
+
+        <!-- ── Main text ────────────────────────────────── -->
+        <div class="bio-text">
+          <p>
+            I'm an undergraduate at <strong>Colorado College</strong> double-majoring in Physics and Chemistry, where I also serve as president of the SPS chapter and compete as a student-athlete. My research spans quantum algorithm design, condensed matter simulation, and computational electrochemistry.
+          </p>
+          <p>
+            My interest in research grew through hands-on lab courses — cryogenic semiconductor transport, Michelson interferometry, He-Ne laser mode analysis — but my deepest work has been computational. I build simulation tools that treat quantum systems rigorously and at scale.
+          </p>
+          <p>
+            Through Northwestern University's <strong>MICRO Program and MRSEC REU</strong> under Dr. Roberto dos Reis, I developed QuScope — a quantum algorithm framework for electron microscopy — culminating in a preprint on arXiv.
+          </p>
+          <p>
+            Long term, I'm applying to doctoral programs in <strong>applied physics and materials science</strong> with a computational emphasis. I want to build the tools that let researchers see what classical simulation cannot, and eventually mentor the next generation of researchers — especially those underrepresented in physics.
+          </p>
+
+          <div class="bio-tags" style="margin-top: 36px;">
+            <span class="tag">Quantum Simulation</span>
+            <span class="tag">DFT</span>
+            <span class="tag">Materials Science</span>
+            <span class="tag">Electron Microscopy</span>
+            <span class="tag">Electrochemistry</span>
+            <span class="tag">Qiskit</span>
+            <span class="tag">Python</span>
+            <span class="tag">HPC</span>
+          </div>
+        </div>
+
+        <!-- ── Aside stats ──────────────────────────────── -->
+        <div class="bio-aside">
+
+          <div class="bio-stat-block">
+            <div class="bio-stat-label">Education</div>
+            <div class="bio-stat-value">B.A. Physics<br>&amp; Chemistry</div>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 6px;">Colorado College · Expected 2027</p>
+          </div>
+
+          <div class="bio-stat-block">
+            <div class="bio-stat-label">Research Affiliations</div>
+            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 4px;">
+              <div>
+                <div style="font-size: 0.9rem; color: var(--text-primary);">Northwestern University</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">MICRO Program · MRSEC REU</div>
+              </div>
+              <div>
+                <div style="font-size: 0.9rem; color: var(--text-primary);">Colorado College</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">SPS Chapter President</div>
+              </div>
+              <div>
+                <div style="font-size: 0.9rem; color: var(--text-primary);">Los Alamos National Laboratory</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">XCP Summer Research Fellow</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bio-stat-block">
+            <div class="bio-stat-label">Contact</div>
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
+              <a href="mailto:s_lam2023@coloradocollege.edu" style="font-size: 0.85rem; color: var(--accent); transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">
+                s_lam2023@coloradocollege.edu
+              </a>
+              <a href="https://arxiv.org/abs/2602.13438" target="_blank" rel="noopener"
+                 style="font-size: 0.85rem; color: var(--text-secondary); transition: color 0.2s;"
+                 onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">
+                arXiv:2602.13438
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <span class="footer-name">Sean D. Lam</span>
+    <nav class="footer-links">
+      <a href="mailto:s_lam2023@coloradocollege.edu"           class="footer-link">Email</a>
+      <a href="https://github.com/seanthelam"              class="footer-link" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://arxiv.org/abs/2602.13438" class="footer-link" target="_blank" rel="noopener">arXiv</a>
+    </nav>
+    <span class="footer-copy">© 2026 Sean D. Lam · Colorado Springs, CO</span>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
